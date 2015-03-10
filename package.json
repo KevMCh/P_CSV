@@ -1,0 +1,24 @@
+{
+  "name": "P_CSV",
+  "version": "1.0.0",
+  "description": "Comma Separated Values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alu0100774665/P_CSV.git"
+  },
+  "keywords": [
+    "Comma",
+    "Separated",
+    "Values"
+  ],
+  "author": "Kevin Martín Chinea, Adrián Calzadilla González",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0100774665/P_CSV/issues"
+  },
+  "homepage": "https://github.com/alu0100774665/P_CSV"
+}
