@@ -1,0 +1,16 @@
+html *
+{
+
+   font-size: large;
+   font-family: "calibri", Georgia, Serif;
+}
+
+#gb{
+
+	background: #DF0101;
+	border: 2px solid #FF0000;
+	width: 200px;
+	a { text-decoration: none; }
+}
+
+body{	background-color:#F5DA81;	}
