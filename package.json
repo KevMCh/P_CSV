@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/alu0100774665/P_CSV/issues"
   },
-  "homepage": "https://github.com/alu0100774665/P_CSV"
+  "homepage": "https://github.com/alu0100774665/P_CSV",
+  "devDependencies": {
+    "bower": "^1.3.12"
+  }
 }
