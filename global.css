@@ -5,12 +5,70 @@ html *
    font-family: "calibri", Georgia, Serif;
 }
 
-#gb{
+div{
+  text-align: center
+}
 
-	background: #DF0101;
-	border: 2px solid #FF0000;
-	width: 200px;
-	a { text-decoration: none; }
+table { margin: auto; }
+
+h1{
+  text-align: center;
+  border:  #f55905 2px solid;
+}
+
+img{
+
+  border:  #f55905 2px solid; 
+  border-radius: 28px;
+
+  margin-right: 10em;
+  margin-bottom: 5em;
+  margin-left: 5em;
+  margin-top:5em;
+
+  float: right;
+  width: 290px;
+  height: 220px;
+
+}
+
+#original{
+
+    border:  #f55905 2px solid;
+
+}
+
+#but{
+
+  margin-left: 2em;
+  margin-bottom: 2em;
+  margin-right: 5em;
+  margin-top:2em;
+
+  background: #f55905;
+  background-image: -webkit-linear-gradient(top, #f55905, #663a0a);
+  background-image: -moz-linear-gradient(top, #f55905, #663a0a);
+  background-image: -ms-linear-gradient(top, #f55905, #663a0a);
+  background-image: -o-linear-gradient(top, #f55905, #663a0a);
+  background-image: linear-gradient(to bottom, #f55905, #663a0a);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 14px;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+  background: #f55905;
+  background-image: -webkit-linear-gradient(top, #f55905, #f0211a);
+  background-image: -moz-linear-gradient(top, #f55905, #f0211a);
+  background-image: -ms-linear-gradient(top, #f55905, #f0211a);
+  background-image: -o-linear-gradient(top, #f55905, #f0211a);
+  background-image: linear-gradient(to bottom, #f55905, #f0211a);
+  text-decoration: none;
+
+
 }
 
 body{	background-color:#F5DA81;	}
