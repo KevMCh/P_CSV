@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Comma Separated Values",
   "main": "index.js",
+  "directories":{
+      "test":"tests"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "karmaTest": "./node_modules/karma/bin/karma start --single-run",
+    "test": "open tests/index.html"
   },
   "repository": {
     "type": "git",
@@ -26,7 +30,12 @@
     "chai": "^2.1.1",
     "express": "^4.12.2",
     "gulp": "^3.8.11",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha": "^0.1.10",
     "mocha": "^2.2.1",
+    "phantomjs": "^1.9.16",
     "underscore": "^1.8.2"
   },
   "dependencies": {
