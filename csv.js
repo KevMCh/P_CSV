@@ -21,13 +21,13 @@ function calculate() {
             "              <% }); %>";
 
   if (window.localStorage) localStorage.original  = temp;
-  
+
   for(var t in lines) {
     var temp = lines[t];
     var m = temp.match(regexp);
     var result = [];
     var error = false;
-    
+
     if (m) {
       if (commonLength && (commonLength != m.length)) {
         //alert('ERROR! row <'+temp+'> has '+m.length+' items!');
