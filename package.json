@@ -6,8 +6,9 @@
   "directories":{
       "test":"tests"
   },
-  "scripts": {
-    "karmaTest": "./node_modules/karma/bin/karma start --single-run",
+  "scripts":{
+
+  	"karmaTest": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
     "test": "open tests/index.html"
   },
   "repository": {
