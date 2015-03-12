@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
   res.render('index', { title: 'Express' });
 })
 
-app.get('/chuchu', function (req, res) {
+app.get('/csv-pl', function (req, res) {
   var isAjaxRequest = req.xhr;
   console.log(isAjaxRequest);
   if (isAjaxRequest) {
