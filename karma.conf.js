@@ -21,6 +21,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js',
       'tests/index.html',
       'tests/*.js',
       '*.js'
@@ -29,7 +31,8 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      'gulpfile.js'
+      'gulpfile.js',
+      'tests/test.js'
     ],
 
 
@@ -56,7 +59,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_DEBUG,
+    logLevel: config.LOG_INFO,
 
 
     // enable / disable watching file and executing tests whenever any file changes
