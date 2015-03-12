@@ -9,7 +9,12 @@ div{
   text-align: center
 }
 
-table { margin: auto; }
+table { 
+
+  margin: auto; 
+
+  border:  #000000 2px solid;
+}
 
 h1{
   text-align: center;
@@ -31,6 +36,11 @@ img{
   height: 220px;
 
 }
+#finaltable table, td { border:1px solid #000000; }
+
+tr:nth-child(odd)    { background-color:#FAAC58; }
+tr:nth-child(even)    { background-color:#F4FA58; }
+tr.error       { background-color: red; }
 
 #original{
 
