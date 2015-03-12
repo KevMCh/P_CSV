@@ -6,9 +6,8 @@
   "directories": {
     "test": "tests"
   },
-  "scripts":{
-
-  	"test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
     "opentest": "open tests/index.html"
   },
   "repository": {
@@ -42,6 +41,7 @@
     "gulp-util": "^3.0.4",
     "karma": "^0.12.31",
     "karma-chai": "^0.1.0",
+    "karma-html2js-preprocessor": "^0.1.0",
     "karma-mocha": "^0.1.10",
     "mocha": "^2.2.1",
     "phantomjs": "^1.9.16",
