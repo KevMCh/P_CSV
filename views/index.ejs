@@ -1,19 +1,31 @@
-<h1><%- title  %></h1>
-<ul>
-  <li><a href="http://jquery.com/" id="jq">jQuery</a>
-  <li><a href="/chuchu">Visit chuchu!</a>
-</ul>
-<div class="result"></div>
-<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-<script>
-  $( document ).ready(function() {
-      $( "#jq" ).click(function( event ) {
-          event.preventDefault();
-          $.get( "/chuchu", {nombres: ["juan", "pedro"]}, function( data ) {
-            $( ".result" ).html( data["answer"]);
-            console.log(data);
-            //alert( "Load was performed. Answer = "+data["answer"]);
-          }, 'json');
-      });
-  });
-</script>
+<h1> CSV  Analyzer</h1>
+
+<h1>Comma Separated Value Analyzer</h1>
+<br>
+  <div>
+    <i>Write a CSV string. Click the table button. The program outputs a table with the specified data.</i>
+  </div>
+<br>
+<br>
+  <div>
+  <table>
+    <tr>
+      <th>CSV string:</th> <!-- autofocus attribute is HTML5 -->
+      <td><textarea autofocus cols = "80" rows = "5" id="original"></textarea></td>
+    </tr>
+  </table>
+
+  <button id="but" type="button">Table:</button><br>
+  <span class="output" id="finaltable"></span>
+
+  </div>
+
+  <br><br>
+
+  <a id="but" class="buttons github" href="https://github.com/alu0100774665/P_CSV">View on GitHub</a>
+  <a id="but" class="button" href="./tests/index.html">Tests</a>
+  <a id="but" class="button" href="https://travis-ci.org/alu0100774665/P_CSV">Travis</a>
+
+  <a href = "http://en.wikipedia.org/wiki/Comma-separated_values"> <img id = "CSV" src = "./images/index.png" alt = "Comma-separated values"></a>
+
+

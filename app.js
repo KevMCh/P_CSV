@@ -15,10 +15,10 @@ app.use(expressLayouts);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'P_CSV' });
 })
 
-app.get('/chuchu', function (req, res) {
+app.get('/csv-pl', function (req, res) {
   var isAjaxRequest = req.xhr;
   console.log(isAjaxRequest);
   if (isAjaxRequest) {

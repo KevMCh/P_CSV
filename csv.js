@@ -30,7 +30,7 @@ function calculate() {
 
     if (m) {
       if (commonLength && (commonLength != m.length)) {
-        //alert('ERROR! row <'+temp+'> has '+m.length+' items!');
+        alert('ERROR! row <'+temp+'> has '+m.length+' items!');
         error = true;
       }
       else {
@@ -48,7 +48,6 @@ function calculate() {
       r.push(tr+_.template(row, {items : result})+"</tr>");
     }
     else {
-      alert('ERROR! row '+temp+' does not look as legal CSV');
       error = true;
     }
   }
