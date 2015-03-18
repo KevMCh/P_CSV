@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var expressLayouts = require('express-ejs-layouts');
+var $ = require('jquery');
+var _ = require('underscore');
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -12,23 +14,11 @@ app.set('view engine', 'ejs');
 
 app.use(expressLayouts);
 //app.use(express.static('public'));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/'));
 
 app.get('/', function (req, res) {
   res.render('index', { title: 'P_CSV' });
 })
-
-app.get('/csv-pl', function (req, res) {
-  var isAjaxRequest = req.xhr;
-  console.log(isAjaxRequest);
-  if (isAjaxRequest) {
-    console.log(req.query);
-    res.send('{"answer": "Server responds: hello world!"}')
-  }
-  else {
-    res.send('not an ajax request');
-  }
-});
 
 var server = app.listen(app.get('port'), function () {
 
